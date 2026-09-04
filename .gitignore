@@ -1,0 +1,17 @@
+node_modules/
+dist/
+
+dashboard-ui/node_modules/
+dashboard-ui/dist/
+
+.env
+.env.*
+!.env.example
+
+*.log
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db

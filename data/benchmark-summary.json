@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-09-04T15:00:09.688Z",
+  "iterations": 100,
+  "warmupIterations": 10,
+  "direct": {
+    "count": 100,
+    "averageMs": 0.307,
+    "minMs": 0.224,
+    "maxMs": 0.98,
+    "p50Ms": 0.286,
+    "p95Ms": 0.408
+  },
+  "gateway": {
+    "count": 100,
+    "averageMs": 1.857,
+    "minMs": 1.099,
+    "maxMs": 4.326,
+    "p50Ms": 1.734,
+    "p95Ms": 3.062
+  },
+  "overhead": {
+    "averageMs": 1.55,
+    "averagePercent": 504.886,
+    "p95Ms": 2.654
+  }
+}

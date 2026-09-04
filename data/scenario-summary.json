@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-09-04T14:56:55.879Z",
+  "allPassed": true,
+  "totalEvents": 18,
+  "allowed": 11,
+  "denied": 7,
+  "eventCounts": {
+    "TOOL_ACCESS": 11,
+    "POLICY_DENIED": 3,
+    "RATE_LIMIT_EXCEEDED": 3,
+    "AUTHENTICATION_FAILED": 1
+  },
+  "risks": {
+    "LOW": 11,
+    "MEDIUM": 3,
+    "HIGH": 3,
+    "CRITICAL": 1
+  },
+  "scenarios": [
+    {
+      "name": "Viewer RBAC",
+      "passed": true,
+      "generatedEvents": 3,
+      "message": "viewer: search=ALLOW, update=DENY, delete=DENY"
+    },
+    {
+      "name": "Developer RBAC",
+      "passed": true,
+      "generatedEvents": 3,
+      "message": "developer: search=ALLOW, update=ALLOW, delete=DENY"
+    },
+    {
+      "name": "Admin RBAC",
+      "passed": true,
+      "generatedEvents": 3,
+      "message": "admin: search=ALLOW, update=ALLOW, delete=ALLOW"
+    },
+    {
+      "name": "Invalid Authentication",
+      "passed": true,
+      "generatedEvents": 1,
+      "message": "invalid API key rejected"
+    },
+    {
+      "name": "Rate Limit Protection",
+      "passed": true,
+      "generatedEvents": 8,
+      "message": "allowed=5, rateLimited=3"
+    }
+  ]
+}
